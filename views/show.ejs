@@ -1,0 +1,8 @@
+<%-include("partials/header")%>
+<h1><%=dogdata.name%></h1>
+<p><%=dogdata.created%></p>
+<a href="/dog/<%=dogdata._id%>/edit" class="btn btn-warning">Edit</a>
+<form action="/dog/<%=dogdata._id%>?_method=delete" method="post">
+    <button class="btn btn-secondary">Destroy</button>
+</form>
+<%-include("partials/footer")%>

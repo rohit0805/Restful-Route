@@ -1,0 +1,8 @@
+<%-include("partials/header")%>
+
+<form action="/dog/<%=dogdata._id%>?_method=PUT" method="POST">
+    <input type="text" name="name" value=<%=dogdata.name%>>
+    <button class="btn btn-danger">Update</button> 
+</form>
+
+<%-include("partials/footer")%>

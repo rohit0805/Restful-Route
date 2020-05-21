@@ -1,0 +1,11 @@
+<%-include("partials/header")%>
+
+<h1>We are in index</h1>
+
+<a href="/dog/new" class="btn btn-primary">Add new dog</a>
+<%dogdata.forEach(function(data){%>
+    <h1><%=data.name%></h1>
+    <p><%=data.created%></p>
+    <a href="/dog/<%=data._id%>" class="btn btn-info">Show more</a>
+<%});%>
+<%-include("partials/footer")%>
